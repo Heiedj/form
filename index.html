@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа 5</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="one">
+        <h1>1 Задача</h1>
+        <p>Дано 4 инпута и 1 кнопка. Найдите сумму этих первых 3 инпутов и запишите ответ в четвертый инпут.</p>
+        <form id="d1" name="oneForm">
+            <input type="text" name='number' placeholder='Введите число'>
+            <input type="text" name='number' placeholder='Введите число'>
+            <input type="text" name='number' placeholder='Введите число'>
+            <input type="text" name='sum' placeholder='Сумма 3-х чисел'>  
+            <input type="button" placeholder='Сумма 3-х чисел' onclick="f1()" value="Рассчитать"> 
+        </form>
+    </div>
+
+    <div class="two">
+        <h1>2 Задача</h1>
+        <p>Дан инпут. В него необходимо ввести цифры. По потери фокуса нужно найти среднее арифметическое этих чисел (сумма делить на количество).</p>
+        <form id="d2" name="twoForm">
+            <input id="num3" type="text" placeholder='Введите числа' onblur='f2()' name="nums">
+            <input type="text" placeholder='Результат ср. ар' name="result"> 
+            <input type="button" placeholder='Сумма 3-х чисел' value="Найти ср. ариф." name="button"> 
+        </form>
+    </div>
+
+    <div class="three">
+        <h1>3 Задача</h1>
+        <p>Дано 4 инпута. В первый инпут необходимо написать свое ФИО через пробел. Три из этих инпута имеют одинаковое значение атрибута name: name = 'input' и они недоступны. По потери фокуса запишите фамилию, имя и отчество в 3 отдельных инпута.</p>
+        <form id="d3" name="threeForm">
+            <input id="fio" type="text" placeholder='Введите ФИО' name='fio' onblur='f3()'>
+            <input type="text" placeholder='Фамилия' name='input' disabled>
+            <input type="text" placeholder='Имя' name='input' disabled>
+            <input type="text" placeholder='Отчество' name='input' disabled>
+        </form>
+    </div>
+
+    <div class="four">
+        <h1>4 Задача</h1>
+        <p>Дан инпут. В него вводится год рождения пользователя. По нажатию на кнопку выведите в абзац ниже сколько пользователю лет.</p>
+        <form id="d4" name="fourForm">
+            <input type="text" placeholder='Введите год рождения' name="year" onblur='f4()'>
+            <input type="text" placeholder='Вывод вашего возраста' name="age" onblur='f4()'>
+        </form>
+    </div>
+
+    <div class="five">
+        <h1>5 Задача</h1>
+        <p>Дан инпут. Его значение изначально равно 0. Реализуйте +1 и -1 этого поля, которые будут увеличивать или уменьшать на 1 значение инпута. Сделайте так, чтобы это значение не могло стать меньше нуля.</p>
+        <form id="d5" name="fiveForm">
+            <input type="text" placeholder='Введите число' value='0' name="nullInput">
+            <input type="button" onclick='f5_1()' value="+1">
+            <input type="button" onclick='f5_2()' value="-1">
+        </form>
+    </div>
+
+    <div class="six">
+        <h1>6 Задача</h1>
+        <p>Дан инпут, в который вводится какое-то слово. По нажатию на кнопку проверьте то, что это слово читается и с начала, и с конца одинаково (например: заказ).</p>
+        <form id="d6" name="sixForm">
+            <input name="word" type="text" placeholder='Введите слово' onblur='f6()'>
+            <input name="resultWord" type="text" placeholder='Результат' onblur='f6()'>
+        </form>
+    </div>
+    <script src="js/sript.js"></script>
+</body>
+</html>

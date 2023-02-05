@@ -1,0 +1,8 @@
+input, a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 700px;
+    height: 30px;
+}
